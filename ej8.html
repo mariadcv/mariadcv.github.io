@@ -1,0 +1,258 @@
+<html lang= "es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> Ejercicio8 . Calculo de areas usando Switch </title>
+  </head>
+  <body>
+    <p>La Empresa Avianca esta interesada en un programa que permita evaluar el pago de un cliente:</p>
+    <table>
+    <tr>
+      <td></td>
+      <td>Primera Clase </td>
+      <td>Segunda Clase</td>
+      <td>Tercera clase </td>
+    </tr>
+      <tr>
+        <td>Europa</td>
+      <td>2500</td>
+      <td>2100</td>
+      <td>1900 </td>
+</tr>
+<tr>
+<td>Ame. Norte</td>
+<td>2000</td>
+<td>1700</td>
+<td>1400 </td>
+</tr>
+<tr>
+<td>Ame. Sur</td>
+<td>1000</td>
+<td>900</td>
+<td>750 </td>
+</tr>
+<tr>
+<td>Islas Caribe</td>
+<td>800</td>
+<td>700</td>
+<td>500 </td>
+</tr>
+
+
+  </table>
+
+
+    <script type="text/javascript">
+      var primera, segunda, tercera, europa, an, as, islas, z1, z2, opc, destino, zona,p, nombre,cedula;
+      nombre=prompt('ingrese su nombre ','');
+      cedula=parseInt('ingrese su nombre ','');
+      opc=prompt('seleccione el tipo de boleto'+'\n1.- Primera Clase \n2.- Segunda Clase \n3.-tercera clase');
+      opc=parseInt(opc);
+
+      switch (opc){
+        case 1:
+        opc=prompt('seleccione el destino'+'\n1.- europa \n2.- America del Norte \n3.-America del Sur \n4.-Islas del Caribe');
+        opc=parseInt(opc);
+        switch (opc){
+          case 1:
+          document.write( "Usted Viaja en Primera Clase con destino a Europa" );
+          zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+          if (zona == 1)
+          {
+            p=2500-(2500*.10);
+            document.write(nombre +" Su costo es de "+ p );
+          }
+          else if(zona == 2)
+          {
+            p=2500+(2500*.08);
+            document.write(nombre +"Su costo es de "+ p );
+          }
+
+            break;
+            case 2:
+           document.write( "Usted Viaja en Primera Clase con destino a America del Norte" );
+          zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+            if (zona == 1)
+            {
+              p=2000-(2000*.10);
+              document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+            }
+            else if(zona == 2)
+            {
+              p=2000+(2000*.08);
+              document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+            }
+
+              break;
+              case 3:
+             document.write( "Usted Viaja en Primera Clase con destino a America del Sur" );
+            zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+              if (zona == 1)
+              {
+                p=1000-(1000*.10);
+                document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+              }
+              else if(zona == 2)
+              {
+                p=1000+(1000*.08);
+                document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+              }
+
+                break;
+                case 4:
+               document.write( "Usted Viaja en Primera Clase con destino a Islas del Caribe" );
+              zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+                if (zona == 1)
+                {
+                  p=800-(800*.10);
+                  document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+                }
+                else if(zona == 2)
+                {
+                  p=800+(800*.08);
+                  document.write( nombre +"<br> El costo de su boleto es de  $" + p );
+                }
+
+                  break;
+        }
+
+        break;
+      case 2:
+      opc=prompt('seleccione el destino'+'\n1.- europa \n2.- America del Norte \n3.-America del Sur \n4.-Islas del Caribe');
+      opc=parseInt(opc);
+      switch (opc){
+        case 1:
+        document.write( "Usted Viaja en Segunda Clase con destino a Europa" );
+        zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+        if (zona == 1)
+        {
+          p=2100-(2100*.05);
+          document.write(nombre +"<br> Su costo es de "+ p );
+        }
+        else if(zona == 2)
+        {
+          p=2100+(2100*.08);
+          document.write(nombre +"<br> Su costo es de "+ p );
+        }
+
+          break;
+          case 2:
+         document.write( "Usted Viaja en Segunda Clase con destino a America del Norte" );
+        zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+          if (zona == 1)
+          {
+            p=2000-(2000*.05);
+            document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+          }
+          else if(zona == 2)
+          {
+            p=1700+(1700*.08);
+            document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+          }
+
+            break;
+            case 3:
+           document.write( "Usted Viaja en Segunda Clase con destino a America del Sur" );
+          zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+            if (zona == 1)
+            {
+              p=900-(900*.05);
+              document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+            }
+            else if(zona == 2)
+            {
+              p=900+(900*.08);
+              document.write( nombre +"<br> El costo de su boleto es de  $" + p );
+            }
+
+              break;
+              case 4:
+             document.write( "Usted Viaja en Segunda Clase con destino a Islas del Caribe" );
+            zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+              if (zona == 1)
+              {
+                p=00-(700*.05);
+                document.write( nombre +"<br> El costo de su boleto es de  $" + p );
+              }
+              else if(zona == 2)
+              {
+                p=700+(700*.08);
+                document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+              }
+
+                break;
+      }
+
+      break;
+    case 3:
+    opc=prompt('seleccione el destino'+'\n1.- europa \n2.- America del Norte \n3.-America del Sur \n4.-Islas del Caribe');
+    opc=parseInt(opc);
+    switch (opc){
+      case 1:
+      document.write( "Usted Viaja en Tercera Clase con destino a Europa" );
+      zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+      if (zona == 1)
+      {
+        p=1900-(1900*.05);
+        document.write(nombre +"<br> Su costo es de "+ p );
+      }
+      else if(zona == 2)
+      {
+        p=1900+(1900*.08);
+        document.write(nombre +"<br> Su costo es de "+ p );
+      }
+
+        break;
+        case 2:
+       document.write( "Usted Viaja en Tercera Clase con destino a America del Norte" );
+      zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+        if (zona == 1)
+        {
+          p=1400-(1400*.05);
+          document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+        }
+        else if(zona == 2)
+        {
+          p=1400+(1400*.08);
+          document.write(nombre + "<br> El costo de su boleto es de  $" + p );
+        }
+
+          break;
+          case 3:
+         document.write( "Usted Viaja en Tercera Clase con destino a America del Sur" );
+        zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+          if (zona == 1)
+          {
+            p=750-(750*.05);
+            document.write( nombre +"<br> El costo de su boleto es de  $" + p );
+          }
+          else if(zona == 2)
+          {
+            p=750+(750*.08);
+            document.write( nombre +"<br> El costo de su boleto es de  $" + p );
+          }
+
+            break;
+            case 4:
+           document.write( "Usted Viaja en Tercera Clase con destino a Islas del Caribe \n" );
+          zona=parseInt (zona=prompt('ingrese el numero de zona en el que se encuenta 1)Fumadores 2)No Fumadores:',''));
+            if (zona == 1)
+            {
+              p=500-(500*.05);
+              document.write( nombre +"<br> El costo de su boleto es de  $" + p );
+            }
+            else if(zona == 2)
+            {
+              p=800+(800*.08);
+              document.write("\n" + nombre +"<br> El costo de su boleto es de  $" + p );
+            }
+
+              break;
+    }
+
+    break;
+    default:
+
+    }
+      </script>
+      </body>
+      </html>
